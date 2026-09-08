@@ -16,6 +16,7 @@ services:
     volumes:
       - /tmp/docker-data:/mnt/disco1
       - windows-data:/storage
+      - ./shared:/shared
     devices:
       - "/dev/kvm:/dev/kvm"
       - "/dev/net/tun:/dev/net/tun"
